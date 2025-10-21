@@ -10,7 +10,6 @@ import userRoutes from './routes/userRoutes';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB
 connectDB();
@@ -28,7 +27,8 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:8080',
+  // ✅ GOOD: Using an env variable is the right way.
+  origin: process.env.FRONTEND_URL || 'http://localhost:8080', 
   credentials: true
 }));
 
@@ -37,19 +37,22 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // Logging middleware
-app.use(morgan('combined'));
+app.use(morgan('combined')); // This will log to Vercel's console
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+// ✅ CHANGED: Path must be '/api/health' because this file is the /api handler.
+app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'Server is running' });
 });
 
 // Routes
+// ✅ GOOD: This will correctly become 'https://.../api/users'
 app.use('/api/users', userRoutes);
 
 // 404 handler
+// ✅ GOOD: This will catch any requests to /api/* that don't match.
 app.use((req, res) => {
-  res.status(404).json({ message: 'Route not found' });
+  res.status(404).json({ message: 'API route not found' });
 });
 
 // Global error handler
@@ -58,9 +61,7 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
   res.status(500).json({ message: 'Something went wrong!' });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📱 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
-});
 
+
+// ✅ KEEP: This is the *only* thing that should be left at the end.
 export default app;
