@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Instagram, Twitter, Facebook } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 
 const Footer = () => {
@@ -120,20 +120,6 @@ const Footer = () => {
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5" />
-                </a>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-primary transition-all duration-200 p-3 hover:bg-primary/10 rounded-lg border border-transparent hover:border-primary/20"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-5 w-5" />
-                </a>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-primary transition-all duration-200 p-3 hover:bg-primary/10 rounded-lg border border-transparent hover:border-primary/20"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-5 w-5" />
                 </a>
               </div>
             </div>
