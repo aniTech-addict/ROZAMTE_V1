@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'seraphine': ['Seraphine', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'lora': ['Lora', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

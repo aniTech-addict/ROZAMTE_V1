@@ -87,7 +87,7 @@ const Index = () => {
               <div className="mb-8 flex items-center gap-3 animate-fade-in">
                 <div className="flex h-12 w-auto items-center justify-center">
                   <img
-                    src={theme === 'dark' ? "/src/assets/ROZMATE-mark-white.png" : "/src/assets/ROZMATE-mark--blue.png"}
+                    src={theme === 'dark' ? "/ROZMATE-mark-white.png" : "/ROZMATE-mark--blue.png"}
                     alt="Rozmate Mark"
                     className="h-10 w-auto transition-opacity duration-300"
                   />

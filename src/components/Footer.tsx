@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <img
-                  src={theme === 'dark' ? "/src/assets/ROZMATE-white.png" : "/src/assets/ROZMATE-blue.png"}
+                  src={theme === 'dark' ? "/ROZMATE-white.png" : "/ROZMATE-blue.png"}
                   alt="Rozmate Logo"
                   className="h-18 w-auto hover:scale-105 transition-transform duration-300"
                 />

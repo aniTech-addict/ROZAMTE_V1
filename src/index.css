@@ -366,7 +366,21 @@ All colors MUST be HSL.
 }
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Seraphine:wght@400;500;600;700&display=swap');
+  @font-face {
+    font-family: 'Lora';
+    src: url('/src/Lora/Lora-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Lora';
+    src: url('/src/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: italic;
+    font-display: swap;
+  }
 
   * {
     @apply border-border;
@@ -378,7 +392,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Seraphine', ui-sans-serif, system-ui, sans-serif;
+    font-family: 'Lora', ui-sans-serif, system-ui, sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 

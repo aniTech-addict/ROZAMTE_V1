@@ -35,7 +35,7 @@ const Navigation = () => {
             <Link to="/" className="flex items-center gap-3">
               <div className="flex h-16 w-auto items-center justify-center">
                 <img
-                  src={theme === 'dark' ? "/src/assets/ROZMATE-white.png" : "/src/assets/ROZMATE-blue.png"}
+                  src={theme === 'dark' ? "/ROZMATE-white.png" : "/ROZMATE-blue.png"}
                   alt="Rozmate Logo"
                   className="h-12 w-auto transition-opacity duration-300"
                 />
