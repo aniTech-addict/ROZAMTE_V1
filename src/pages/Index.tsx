@@ -96,9 +96,9 @@ const Index = () => {
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in-up leading-tight">
-                Find Work. Hire Talent.{" "}
+                One stop for
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Stay Compliant.
+                  every Job.
                 </span>
               </h1>
 
