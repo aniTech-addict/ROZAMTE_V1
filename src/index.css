@@ -366,6 +366,8 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Seraphine:wght@400;500;600;700&display=swap');
+
   * {
     @apply border-border;
   }
@@ -376,6 +378,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Seraphine', ui-sans-serif, system-ui, sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
