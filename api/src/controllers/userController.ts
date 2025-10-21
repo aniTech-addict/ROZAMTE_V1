@@ -47,7 +47,7 @@ export const signup = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    // Create new user (ensure no username field is set)
+    
     const newUser: IUser = new User({
       name: name.trim(),
       email: email.toLowerCase().trim(),
