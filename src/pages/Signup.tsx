@@ -91,7 +91,7 @@ const Signup = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }} />
       <div className="relative w-full max-w-md z-10">
-        <div className="rounded-2xl border border-border bg-card p-8 shadow-card animate-scale-in">
+        <div className="rounded-2xl border border-border bg-card p-8 shadow-card">
           {isSuccess ? (
             <div className="text-center space-y-6">
               <div className="flex justify-center mb-6">

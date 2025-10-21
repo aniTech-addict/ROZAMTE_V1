@@ -10,7 +10,7 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
 
             {/* Brand Section */}
             <div className="space-y-4">
@@ -73,6 +73,34 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-4">
+              <h3 className="font-semibold text-foreground text-base">Contact Us</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div>
+                  <p className="font-medium text-foreground">Email</p>
+                  <a href="mailto:rozmatee@gmail.com" className="hover:text-primary transition-colors duration-300">
+                    rozmatee@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Phone</p>
+                  <a href="tel:+917990392731" className="hover:text-primary transition-colors duration-300">
+                    +91 79903 92731
+                  </a>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Address</p>
+                  <div className="text-sm leading-relaxed">
+                    <p>C/702, Ganesh Opera,</p>
+                    <p>Opposite Sadguru Vatika Bungalows,</p>
+                    <p>Near Sargam Vatika Flat, M.G. Road,</p>
+                    <p>Nikol, Ahmedabad, Gujarat – 382350, India</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Social Media Links */}
